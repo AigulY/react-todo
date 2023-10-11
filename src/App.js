@@ -1,20 +1,20 @@
 import React from 'react';
 
 const todoList = [
-  { 
-    id: 1, 
+  {
+    id: 1,
     title: "Complete assignment",
     assignment_number: "_1_1"
   },
-  { 
-    id: 2, 
+  {
+    id: 2,
     title: "Git push assignment",
-    assignment_number: "_1_1" 
+    assignment_number: "_1_1"
   },
-  { 
-    id: 3, 
+  {
+    id: 3,
     title: "Merge assignment",
-    assignment_number: "_1_1" 
+    assignment_number: "_1_1"
   },
 ];
 
@@ -23,19 +23,19 @@ function App() {
     <div>
       <h1>ToDo List</h1>
       <label htmlFor='search'>Search: </label>
-        <input id='search' type='text'></input>
-      
+      <input id='search' type='text'></input>
+
       <hr />
       {/* render the list */}
       <ul>
-        {todoList.map(function(item) {
+        {todoList.map(function (item) {
           return (
             <li key={item.id}>
               <span>
-                { item.title }
+                {item.title}
               </span>
               <span>
-                { item.assignment_number }
+                {item.assignment_number}
               </span>
             </li>
           );
